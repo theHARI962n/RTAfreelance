@@ -1,3 +1,5 @@
+import logo from "../../assets/logo.png";
+
 export default function HeroSection() {
     return (
       <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between px-8 md:px-20 bg-gradient-to-r from-pink-50 via-white to-pink-100 overflow-hidden">
@@ -7,7 +9,7 @@ export default function HeroSection() {
   
         {/* Left Side — Logo */}
         <div className="relative z-10 md:w-1/2 flex justify-center md:justify-start mb-12 md:mb-0 ml-10">
-          <img src="./src/assets/logo.png" alt="Brand Logo" className="w-[480px]" />
+          <img src={logo} alt="Brand Logo" className="w-[480px]" />
         </div>
   
         {/* Right Side — Text */}

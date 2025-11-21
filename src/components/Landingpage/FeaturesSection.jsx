@@ -1,4 +1,5 @@
 import { Users, Award, Clock, Layers } from "lucide-react";
+import bgvideo1 from "../../assets/videos/bgvideo1.mp4";
 
 export default function FeaturesSection() {
   const features = [
@@ -11,7 +12,7 @@ export default function FeaturesSection() {
   return (
     <section id="features" className="relative py-28 px-6 overflow-hidden">
       <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-20">
-        <source src="./src/assets/videos/bgvideo1.mp4" type="video/mp4" />
+        <source src={bgvideo1} type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-black/10"></div>
 

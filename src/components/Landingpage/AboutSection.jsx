@@ -1,3 +1,5 @@
+import bgvideo2 from "../../assets/videos/bgvideo2.mp4";
+
 export default function AboutSection() {
   return (
     <section id="about" className="py-28 px-6 bg-gray-50">
@@ -38,7 +40,7 @@ export default function AboutSection() {
             className="rounded-2xl shadow-xl w-full h-full object-cover"
           >
             <source
-              src="./src/assets/videos/bgvideo2.mp4"
+              src={bgvideo2}
               type="video/mp4"
             />
             Your browser does not support the video tag.
