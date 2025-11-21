@@ -6,7 +6,7 @@ export default function TestimonialsSection() {
     ];
   
     return (
-      <section id="testimonials" className="py-28 px-6 bg-white">
+      <section id="testimonials" className="py-28 px-6 bg-white mt-20 md:mt-0">
         <h3 className="text-4xl font-extrabold text-center mb-16">
           What Our <span className="text-pink-600">Students Say</span>
         </h3>

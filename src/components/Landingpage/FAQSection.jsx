@@ -7,22 +7,23 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      q: "What courses do you offer?",
-      a: "We offer Fashion Designing, Mural Painting, Tanjore Painting, and Aari Embroidery."
+      q: "How do online classes work?",
+      a: "You’ll get access to pre-recorded lessons and worksheets. You can learn at your own pace from anywhere.",
     },
     {
-      q: "Do I get a certificate after completion?",
-      a: "Yes! Each course comes with a verified digital certificate to boost your portfolio."
+      q: "Can I join from outside India?",
+      a: "Absolutely! Anyone from any country can join the online classes and learn with us.",
     },
     {
-      q: "Are the classes flexible?",
-      a: "Absolutely. You can learn at your own pace with our online and offline options."
+      q: "What are the fees and payment options?",
+      a: "Fees vary based on the course. We accept UPI, Netbanking, GPay, PhonePe, and all major payment methods.",
     },
   ];
 
+
   return (
-    <section id="faq" className="py-28 px-6 bg-gray-50">
-      <h3 className="text-3xl font-bold text-center mb-12">
+    <section id="faq" className="py-20 sm:py-28 px-4 sm:px-6 bg-gray-50">
+      <h3 className="text-3xl sm:text-4xl font-bold text-center mb-12">
         Frequently Asked <span className="text-pink-600">Questions</span>
       </h3>
 
@@ -37,7 +38,7 @@ export default function FAQSection() {
             >
               <button
                 onClick={() => setOpenIndex(isOpen ? null : i)}
-                className="w-full flex justify-between items-center px-6 py-5 text-left font-semibold text-gray-800 hover:bg-pink-50 rounded-2xl transition"
+                className="w-full flex justify-between items-center px-5 sm:px-6 py-6 text-left font-semibold text-gray-800 hover:bg-pink-50 rounded-2xl transition"
               >
                 {faq.q}
 
@@ -58,7 +59,7 @@ export default function FAQSection() {
                     transition={{ duration: 0.2, ease: "easeOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="mt-2 px-6 pb-5 text-gray-600">
+                    <div className="mt-2 px-5 sm:px-6 pb-6 text-gray-600">
                       {faq.a}
                     </div>
                   </motion.div>
