@@ -52,7 +52,10 @@ export default function CoursesSection() {
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={24}
         slidesPerView={1} // default to 1 slide visible
-        navigation
+        navigation={{
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
+        }}
         pagination={{ clickable: true }}
         autoplay={{ delay: 4000 }}
         breakpoints={{
@@ -63,10 +66,19 @@ export default function CoursesSection() {
         }}
         className="max-w-6xl mx-auto overflow-visible"
         onInit={() => {
-         setTimeout(() => window.dispatchEvent(new Event("resize")), 500);
+          setTimeout(() => window.dispatchEvent(new Event("resize")), 500);
         }}
-
       >
+        <div className="flex justify-center gap-4 mt-8">
+          <button className="custom-prev  shadow-lg flex items-center justify-center hover:scale-110 hover:shadow-2xl transition">
+            
+          </button>
+
+          <button className="custom-next  shadow-lg flex items-center justify-center hover:scale-110 hover:shadow-2xl transition">
+            
+          </button>
+        </div>
+
         {courses.map((c, i) => (
           <SwiperSlide key={i}>
             <div className="relative w-full h-80 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">

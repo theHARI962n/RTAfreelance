@@ -6,8 +6,8 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Courses", href: "#courses" },
     { label: "About", href: "#about" },
+    { label: "Courses", href: "#courses" },
     { label: "Features", href: "#features" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "FAQ", href: "#faq" },

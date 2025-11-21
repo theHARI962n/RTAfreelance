@@ -1,34 +1,33 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
-import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.css";
+import PageWrapper from "./PageWrapper";
 import LandingPage from "./components/Landingpage/LandingPage";
 import About from "./components/Landingpage/AboutSection";
 import Contact from "./components/Landingpage/ContactSection";
 import Navbar from "./Navbar";
 
 function App() {
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]"),
-      smooth: true,
-      multiplier: 1,
-      class: "is-reveal",
-    });
+  // useEffect(() => {
+  //   const scroll = new LocomotiveScroll({
+  //     el: document.querySelector("[data-scroll-container]"),
+  //     smooth: true,
+  //     multiplier: 1,
+  //     class: "is-reveal",
+  //   });
 
-    // Clean up on unmount
-    return () => {
-      if (scroll) scroll.destroy();
-    };
-  }, []);
+  //   // Clean up on unmount
+  //   return () => {
+  //     if (scroll) scroll.destroy();
+  //   };
+  // }, []);
 
   return (
     <Router>
       
-      <div data-scroll-container>
+      <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<PageWrapper><LandingPage /></PageWrapper>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
