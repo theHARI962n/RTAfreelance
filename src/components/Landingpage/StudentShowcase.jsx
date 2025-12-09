@@ -4,7 +4,6 @@ export default function StudentShowcase() {
   return (
     <section id="student-work" className="py-28 px-6 bg-white">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        
         {/* Left Side: Text */}
         <div className="space-y-6 text-center md:text-left flex flex-col items-center md:items-start">
           <h3 className="text-4xl font-extrabold tracking-tight">
@@ -12,8 +11,8 @@ export default function StudentShowcase() {
           </h3>
 
           <p className="text-gray-600 text-lg leading-relaxed">
-            From fashion sketches to intricate embroidery, our students create amazing outputs. 
-            Check out their work and get inspired!
+            From fashion sketches to intricate embroidery, our students create
+            amazing outputs. Check out their work and get inspired!
           </p>
 
           <a
@@ -31,10 +30,10 @@ export default function StudentShowcase() {
           <img
             src={WImage}
             alt="Students' Work"
+            loading="lazy"
             className="w-full max-w-6xl object-cover"
           />
         </div>
-
       </div>
     </section>
   );

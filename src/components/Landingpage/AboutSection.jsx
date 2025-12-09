@@ -41,6 +41,7 @@ export default function AboutSection() {
             loop
             muted
             playsInline
+            preload="metadata"
             className="
               rounded-2xl shadow-xl 
               w-full 

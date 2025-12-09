@@ -40,6 +40,7 @@ export default function FeaturesSection() {
         autoPlay
         loop
         muted
+        preload="metadata"
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-20"
       >

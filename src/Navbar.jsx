@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // for mobile toggle
 
@@ -15,8 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    
-    <header  className="fixed top-4 left-0 right-0 z-50 mx-6 md:mx-20">
+    <header className="fixed top-4 left-0 right-0 z-50 mx-6 md:mx-20">
       <div className="flex justify-between items-center px-6 py-4 rounded-2xl bg-white/70 backdrop-blur-md shadow-lg border border-gray-200">
         {/* Logo */}
         <h1 className="text-xl md:text-2xl font-extrabold tracking-tight text-gray-900">
@@ -38,7 +36,6 @@ export default function Navbar() {
         </nav>
 
         {/* Login */}
-        
 
         {/* Mobile Menu Button */}
         <button
@@ -62,7 +59,6 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
-          
         </div>
       )}
     </header>
