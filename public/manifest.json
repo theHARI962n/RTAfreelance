@@ -1,0 +1,22 @@
+{
+  "name": "Renu Thread and Brush Arts",
+  "short_name": "Renu Arts",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7A3E9D",
+  "description": "Handcrafted thread and brush art creations by Renu.",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
