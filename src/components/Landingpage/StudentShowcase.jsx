@@ -10,7 +10,7 @@ export default function StudentShowcase() {
             Wanna see our <span className="text-pink-600">Student's Work?</span>
           </h3>
 
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-gray-600 text-lg leading-relaxed font-serif">
             From fashion sketches to intricate embroidery, our students create
             amazing outputs. Check out their work and get inspired!
           </p>
@@ -19,21 +19,29 @@ export default function StudentShowcase() {
             href="https://www.instagram.com/renuthreadarts/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-pink-600 to-pink-800 text-white rounded-full shadow hover:scale-105 transition transform"
+            className="inline-block px-8 py-3 bg-gradient-to-r from-pink-600 to-pink-800 text-white rounded-full shadow hover:scale-105 transition transform font-serif"
           >
             Visit Instagram →
           </a>
         </div>
 
         {/* Right Side: Single Image */}
-        <div className="flex justify-center mt-20 md:mt-0">
-          <img
-            src={WImage}
-            alt="Students' Work"
-            loading="lazy"
-            className="w-full max-w-6xl object-cover"
-          />
-        </div>
+        {/* Right Side: Image */}
+<div className="relative flex justify-center md:justify-end">
+  <img
+    src={WImage}
+    alt="Students' Work"
+    loading="lazy"
+    className="
+      w-full 
+      max-w-xl 
+      md:max-w-2xl 
+      lg:max-w-3xl
+      object-contain
+    "
+  />
+</div>
+
       </div>
     </section>
   );

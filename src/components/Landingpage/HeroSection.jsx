@@ -31,7 +31,7 @@ export default function HeroSection() {
           <span className="text-pink-600">Fashion & Art</span>
         </h2>
 
-        <p className="text-gray-600 mt-6 text-lg leading-relaxed max-w-md mx-auto md:mx-0">
+        <p className="text-gray-600 mt-6 text-lg leading-relaxed max-w-md mx-auto md:mx-0 font-serif">
           Learn Fashion Designing, Tanjore Painting, Mural Art & Aari Embroidery
           — anytime, anywhere with expert guidance.
         </p>

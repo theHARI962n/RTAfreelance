@@ -23,7 +23,7 @@ export default function ContactSection() {
         Get in <span className="text-pink-600">Touch</span>
       </h3>
 
-      <p className="text-lg text-gray-600 max-w-xl mx-auto mb-10">
+      <p className="text-lg text-gray-600 max-w-xl mx-auto mb-10 font-serif">
         Have questions? We’d love to help you choose the right course!
       </p>
 

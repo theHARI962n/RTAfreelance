@@ -65,7 +65,7 @@ export default function FeaturesSection() {
               <h4 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">
                 {f.title}
               </h4>
-              <p className="text-gray-600 text-sm sm:text-base">{f.desc}</p>
+              <p className="text-gray-600 text-sm sm:text-base font-serif">{f.desc}</p>
             </div>
           ))}
         </div>

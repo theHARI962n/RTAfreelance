@@ -38,7 +38,7 @@ export default function FAQSection() {
             >
               <button
                 onClick={() => setOpenIndex(isOpen ? null : i)}
-                className="w-full flex justify-between items-center px-5 sm:px-6 py-6 text-left font-semibold text-gray-800 hover:bg-pink-50 rounded-2xl transition"
+                className="w-full flex justify-between items-center px-5 sm:px-6 py-6 text-left font-semibold text-gray-800 hover:bg-pink-50 rounded-2xl transition font-serif"
               >
                 {faq.q}
 
@@ -59,7 +59,7 @@ export default function FAQSection() {
                     transition={{ duration: 0.2, ease: "easeOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="mt-2 px-5 sm:px-6 pb-6 text-gray-600">
+                    <div className="mt-2 px-5 sm:px-6 pb-6 text-gray-600 font-serif">
                       {faq.a}
                     </div>
                   </motion.div>

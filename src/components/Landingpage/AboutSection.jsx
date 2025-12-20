@@ -14,13 +14,13 @@ export default function AboutSection() {
             </span>
           </h3>
 
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed font-serif">
             At <span className="font-semibold text-gray-900">Renu Arts</span>, we blend
             tradition with modern creativity. Our mission is to make professional
             Fashion Designing, Mural, Tanjore Painting, and Aari Embroidery accessible.
           </p>
 
-          <ul className="space-y-3 text-gray-700">
+          <ul className="space-y-3 text-gray-700 font-serif">
             {[
               "Start from basics — no prior experience needed.",
               "Access all recorded classes anytime for 6 months.",
