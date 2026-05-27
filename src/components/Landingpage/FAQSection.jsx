@@ -22,7 +22,7 @@ export default function FAQSection() {
 
 
   return (
-    <section id="faq" className="py-20 sm:py-28 px-4 sm:px-6 bg-gray-50">
+    <section id="faq" className="py-20 sm:py-28 px-4 sm:px-6 bg-[#faf8f3]">
       <h3 className="text-3xl sm:text-4xl font-bold text-center mb-12">
         Frequently Asked <span className="text-pink-600">Questions</span>
       </h3>

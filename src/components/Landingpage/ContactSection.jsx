@@ -17,7 +17,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 sm:py-28 px-6 text-center bg-white"
+      className="py-20 sm:py-28 px-6 text-center bg-[#fffef9]"
     >
       <h3 className="text-3xl sm:text-4xl font-extrabold mb-6">
         Get in <span className="text-pink-600">Touch</span>

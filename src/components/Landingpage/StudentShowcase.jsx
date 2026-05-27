@@ -2,7 +2,7 @@ import WImage from "../../assets/image1-nobg.png";
 
 export default function StudentShowcase() {
   return (
-    <section id="student-work" className="py-28 px-6 bg-white">
+    <section id="student-work" className="py-28 px-6 bg-[#fffef9]">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         {/* Left Side: Text */}
         <div className="space-y-6 text-center md:text-left flex flex-col items-center md:items-start">
