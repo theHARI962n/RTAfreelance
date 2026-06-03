@@ -5,32 +5,62 @@ import CountdownTimer from "./CountdownTimer";
 
 const pants = [
   {
-    name: "Palazzo Pant",
-    description: "Flowy silhouettes with elegant drape techniques.",
+    name: "Salwar Pant",
+    description: "Traditional comfort-fit pant with gathered styling.",
     image:
       "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    name: "Cargo Pant",
-    description: "Utility-inspired construction and structured styling.",
+    name: "Dhoti Pant",
+    description: "Learn draped construction and modern dhoti styling.",
     image:
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    name: "Bell Bottom",
-    description: "Retro-inspired wide flare pattern development.",
+    name: "Patiala Pant",
+    description: "Master pleats, volume and traditional drafting.",
     image:
       "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    name: "Jogger Pant",
-    description: "Contemporary casual silhouettes with comfort detailing.",
+    name: "Tulip Pant",
+    description: "Create overlapping panel structures and elegant shapes.",
     image:
       "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200&auto=format&fit=crop",
   },
   {
+    name: "Churidar Pant",
+    description: "Draft fitted silhouettes with classic gathers.",
+    image:
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
     name: "Straight Pant",
-    description: "Classic tailoring and balanced structure techniques.",
+    description: "Essential straight-cut drafting and stitching.",
+    image:
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Straight Culotte",
+    description: "Modern cropped wide-leg construction techniques.",
+    image:
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Circular Culotte",
+    description: "Learn circular flare drafting and flow creation.",
+    image:
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Wide Leg Pant",
+    description: "Pattern making for elegant flowing silhouettes.",
+    image:
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Harem Pant",
+    description: "Relaxed drape and contemporary fashion styling.",
     image:
       "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop",
   },
