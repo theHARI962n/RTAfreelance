@@ -5,6 +5,10 @@ import LandingPage from "./components/Landingpage/LandingPage";
 import About from "./components/Landingpage/AboutSection";
 import Contact from "./components/Landingpage/ContactSection";
 import Navbar from "./Navbar";
+import FashionDesigning from "./components/Carouselpage/FashionDesigning";
+import MuralPainting from "./components/Carouselpage/MuralPainting";
+import TanjorePainting from "./components/Carouselpage/TanjorePainting";
+import AariEmbroidery from "./components/Carouselpage/AariEmbroidery";
 
 function App() {
   // useEffect(() => {
@@ -30,6 +34,11 @@ function App() {
           <Route path="/" element={<PageWrapper><LandingPage /></PageWrapper>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/courses/fashion-designing" element={<FashionDesigning />} />
+          <Route path="/courses/mural-painting" element={<MuralPainting />} />
+          <Route path="/courses/tanjore-painting" element={<TanjorePainting />} />
+          <Route path="/courses/aari-embroidery" element={<AariEmbroidery />} />
+          <Route path="*" element={<div className="min-h-screen flex items-center justify-center"><h2 className="text-2xl font-semibold">404 - Page Not Found</h2></div>} />
         </Routes>
       </div>
     </Router>
