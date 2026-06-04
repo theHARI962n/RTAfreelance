@@ -3,6 +3,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 import fash from "../../assets/carousel/fash.jpg";
 import mural from "../../assets/carousel/mural.jpg";
@@ -15,31 +16,35 @@ export default function CoursesSection() {
       title: "Fashion Designing",
       desc: "Master modern and traditional techniques in fashion.",
       img: fash,
+      link: "/courses/fashion-designing",
     },
     {
       title: "Mural Painting",
       desc: "Create breathtaking wall art with expert guidance.",
       img: mural,
+      link: "/courses/mural-painting",
     },
     {
       title: "Tanjore Painting",
       desc: "Learn this timeless classical South Indian art form.",
       img: tanj,
+      link: "/courses/tanjore-painting",
     },
     {
       title: "Aari Embroidery",
       desc: "Discover the elegance of intricate hand embroidery.",
       img: aari,
+      link: "/courses/aari-embroidery",
     },
   ];
 
   return (
     <section
       id="courses"
-      className="py-24 px-4 bg-gradient-to-b from-pink-50 via-purple-50 to-indigo-50"
+      className="py-24 px-4 bg-[#faf8f3]"
     >
       <h3 className="text-3xl sm:text-4xl font-extrabold text-center mb-14">
-        Our <span className="text-pink-600">Courses</span>
+         <span className="text-[#2c2218] font-light tracking-tight">Courses</span>
       </h3>
 
       {/* Arrows OUTSIDE swiper */}
@@ -57,9 +62,7 @@ export default function CoursesSection() {
           spaceBetween={24}
           slidesPerView={1}
           autoplay={{ delay: 4500, disableOnInteraction: false }}
-          pagination={{ clickable: true,
-          el: '.mobile-pagination'
-           }}
+          pagination={{ clickable: true, el: ".mobile-pagination" }}
           navigation={{
             nextEl: ".course-next",
             prevEl: ".course-prev",
@@ -73,7 +76,6 @@ export default function CoursesSection() {
             <SwiperSlide key={i}>
               {/* CARD */}
               <div className="group relative h-80 lg:h-[420px] rounded-3xl overflow-hidden bg-black shadow-md">
-                
                 {/* Image (only image zooms) */}
                 <img
                   src={c.img}
@@ -83,7 +85,7 @@ export default function CoursesSection() {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/30 to-transparent" />
 
                 {/* Content */}
                 <div className="absolute bottom-0 p-6 text-white">
@@ -95,16 +97,19 @@ export default function CoursesSection() {
                   </p>
 
                   {/* Button (slide-in, not scale) */}
-                  <button className="
-                    inline-flex items-center gap-2
-                    px-5 py-2 rounded-full
-                    bg-white text-gray-900 font-medium
-                    opacity-0 translate-y-3
-                    group-hover:opacity-100 group-hover:translate-y-0
-                    transition-all duration-300
-                  ">
+                  <Link
+                    to={c.link}
+                    className="
+                       inline-flex items-center gap-2
+                       px-5 py-2 rounded-full
+                     bg-white text-gray-900 font-medium
+                       opacity-0 translate-y-3
+                       group-hover:opacity-100 group-hover:translate-y-0
+                       transition-all duration-300
+                      " >
+                    {/* Learn More */}
                     Learn More →
-                  </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
