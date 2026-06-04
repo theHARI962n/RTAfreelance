@@ -15,3 +15,31 @@ img {
   display: block;
 }
 
+/* Hide scrollbar but keep scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Marquee animation for announcement strip */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 8s linear infinite;
+}
+
+/* .animate-marquee:hover {
+  animation-play-state: paused;
+} */
