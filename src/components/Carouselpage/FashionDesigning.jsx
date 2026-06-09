@@ -81,7 +81,7 @@ export default function FashionDesigning() {
             </button>
 
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919840918392"
               target="_blank"
               rel="noreferrer"
               className="rounded-full border border-gray-300 py-3 px-6 text-sm text-center hover:bg-gray-50 transition"
