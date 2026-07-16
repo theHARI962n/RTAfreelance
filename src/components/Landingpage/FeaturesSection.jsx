@@ -1,5 +1,5 @@
 import { Users, BookOpen, Clock, Layers } from "lucide-react";
-import bgvideo1 from "../../assets/videos/bgvideo1.mp4";
+import bgvideo1 from "../../assets/videos/bgvideo1-optimized.mp4";
 
 export default function FeaturesSection() {
   const features = [

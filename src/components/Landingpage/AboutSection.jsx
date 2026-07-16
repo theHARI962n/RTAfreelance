@@ -1,4 +1,4 @@
-import bgvideo2 from "../../assets/videos/bgvideo2.mp4";
+import bgvideo2 from "../../assets/videos/bgvideo2-optimized.mp4";
 
 export default function AboutSection() {
   return (

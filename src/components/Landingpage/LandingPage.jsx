@@ -8,6 +8,7 @@ import FAQSection from "./FAQSection.jsx";
 import ContactSection from "./ContactSection.jsx";
 import StudentShowcase from "./StudentShowcase.jsx";
 import Footer from "./FooterSection.jsx";
+import FeaturedWorkshop from "./FeaturedWorkshop.jsx";
 import { motion } from "framer-motion";
 import { pageVariants } from "../../animations.js";
 
@@ -24,6 +25,7 @@ export default function LandingPage() {
       <HeroSection />
       <AboutSection />
       <FeaturesSection />
+      <FeaturedWorkshop />
       <CoursesSection />
       <TestimonialsSection />
       <StudentShowcase />

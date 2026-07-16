@@ -5,10 +5,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 
-import fash from "../../assets/carousel/fash.jpg";
-import mural from "../../assets/carousel/mural.jpg";
-import aari from "../../assets/carousel/aari.jpg";
-import tanj from "../../assets/carousel/tanj.png";
+import fash from "../../assets/carousel/fash.webp";
+import mural from "../../assets/carousel/mural.webp";
+import aari from "../../assets/carousel/aari.webp";
+import tanj from "../../assets/carousel/tanj.webp";
 
 export default function CoursesSection() {
   const courses = [

@@ -1,4 +1,4 @@
-import WImage from "../../assets/image1-nobg.png";
+import WImage from "../../assets/image1-nobg.webp";
 
 export default function StudentShowcase() {
   return (
