@@ -25,7 +25,7 @@ export default function LandingPage() {
       <HeroSection />
       <AboutSection />
       <FeaturesSection />
-      <FeaturedWorkshop />
+      {/* <FeaturedWorkshop /> */}
       <CoursesSection />
       <TestimonialsSection />
       <StudentShowcase />
