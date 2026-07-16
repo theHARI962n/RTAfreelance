@@ -10,7 +10,7 @@ export default function AnnouncementStrip() {
         {/* Moving Text */}
         <div className="overflow-hidden flex-1">
           <div className="whitespace-nowrap animate-marquee text-sm tracking-[0.12em] text-[#6b5d4f] uppercase">
-            10 Types of Pants Workshop • Starts July 1 • Live Online Classes •
+             Pant MasterClass Workshop • Starts August 16 • Live Online Classes •
             Limited Seats • Beginner Friendly • Tamil Language • 10 Types of
             Pants Workshop • Starts July 1 • Live Online Classes • Limited
             Seats • Beginner Friendly • Tamil Language •

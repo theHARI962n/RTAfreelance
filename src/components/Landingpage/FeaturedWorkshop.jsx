@@ -79,7 +79,7 @@ export default function FeaturedWorkshop() {
               </p>
 
               <h2 className="text-4xl md:text-6xl font-light text-[#2c2218] leading-tight">
-                10 Types of Pants
+                 Pant Masterclass
               </h2>
 
               <p className="text-[#6b5d4f] text-lg max-w-xl leading-relaxed font-light">
@@ -95,7 +95,7 @@ export default function FeaturedWorkshop() {
                   Starting Date
                 </p>
                 <h3 className="text-2xl font-light text-[#2c2218]">
-                  July 1, 2026
+                  August 27, 2026
                 </h3>
               </div>
 
