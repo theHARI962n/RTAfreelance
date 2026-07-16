@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import Footer from "../Landingpage/FooterSection";
-import fashionImg from "../../../src/assets/carousel/fash.jpg";
-import muralImg from "../../../src/assets/carousel/mural.jpg";
-import tanjoreImg from "../../../src/assets/carousel/tanj.png";
+import fashionImg from "../../../src/assets/carousel/fash.webp";
+import muralImg from "../../../src/assets/carousel/mural.webp";
+import tanjoreImg from "../../../src/assets/carousel/tanj.webp";
 import AnnouncementStrip from "../Landingpage/AnnouncementStrip";
 import { useState } from "react";
 import WaitlistModal from "../Landingpage/WaitlistModal";

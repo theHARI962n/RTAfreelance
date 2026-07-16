@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import Footer from "../Landingpage/FooterSection";
-import fashionImg from "../../../src/assets/carousel/fash.jpg";
-import muralImg from "../../../src/assets/carousel/mural.jpg";
-import tanjoreImg from "../../../src/assets/carousel/tanj.png";
-import ariImg from "../../../src/assets/carousel/aari.jpg";
+import fashionImg from "../../../src/assets/carousel/fash.webp";
+// import muralImg from "../../../src/assets/carousel/mural.jpg";
+import tanjoreImg from "../../../src/assets/carousel/tanj.webp";
+import ariImg from "../../../src/assets/carousel/aari.webp";
 import AnnouncementStrip from "../Landingpage/AnnouncementStrip";
 import WaitlistModal from "../Landingpage/WaitlistModal";
 import { useState } from "react";
