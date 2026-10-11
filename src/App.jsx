@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import PageWrapper from "./PageWrapper";
 import LandingPage from "./components/Landingpage/LandingPage";
 import About from "./components/Landingpage/AboutSection";
@@ -9,6 +9,7 @@ import FashionDesigning from "./components/Carouselpage/FashionDesigning";
 import MuralPainting from "./components/Carouselpage/MuralPainting";
 import TanjorePainting from "./components/Carouselpage/TanjorePainting";
 import AariEmbroidery from "./components/Carouselpage/AariEmbroidery";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   // useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
       
       <div>
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<PageWrapper><LandingPage /></PageWrapper>} />
           <Route path="/about" element={<About />} />
