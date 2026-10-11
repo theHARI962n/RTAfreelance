@@ -134,7 +134,7 @@ export default function TanjorePainting() {
             </Link>
 
             <Link
-              to="/courses/tanjore-painting"
+              to="/courses/fashion-designing"
               className="group rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
             >
               <img

@@ -114,7 +114,7 @@ export default function MuralPainting() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
             <Link
-              to="/courses/mural-painting"
+              to="/courses/fashion-designing"
               className="group rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
             >
               <img
