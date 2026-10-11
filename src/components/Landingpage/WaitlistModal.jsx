@@ -29,6 +29,7 @@ export default function WaitlistModal({
   if (!isOpen) return null;
 
   const handleSubmit = async () => {
+    setLoading(true);
     try {
       const response = await fetch("https://rta-backend-kuz4.onrender.com/api/waitlist", {
         method: "POST",
