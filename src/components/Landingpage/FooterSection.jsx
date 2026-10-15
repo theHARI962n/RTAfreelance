@@ -4,6 +4,9 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
+import { Link } from "react-router-dom";
+
+
 export default function Footer() {
   const whatsappMessage =
     "Hi! I would like to know more about Renu Thread & Brush Arts.";
@@ -20,24 +23,23 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#292522] text-[#D8D0C8]">
+    <footer className="bg-black text-[#D8D0C8]">
+      {/* <div className="border-b border-[#D8D0C8] "></div> */}
+      <div className="mx-auto w-[95%] border-b border-[#403B37]" />
 
       {/* Main Footer */}
       <div className="mx-auto max-w-7xl px-6 py-16 md:px-12 lg:px-16">
-
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-
           {/* Brand */}
           <div className="lg:col-span-2">
-
             <h2 className="font-serif text-3xl text-[#F7F3EE]">
               Renu Thread & Brush Arts
             </h2>
 
             <p className="mt-5 max-w-md text-sm leading-7 text-[#AFA69D]">
-              Learn creative skills through practical, step-by-step
-              classes in Tamil — from Fashion Designing and Aari
-              Embroidery to Tanjore Painting and Mural Art.
+              Learn creative skills through practical, step-by-step classes in
+              Tamil — from Fashion Designing and Aari Embroidery to Tanjore
+              Painting and Mural Art.
             </p>
 
             {/* Trust */}
@@ -55,18 +57,15 @@ export default function Footer() {
               <FaWhatsapp size={18} />
               WhatsApp Us
             </button>
-
           </div>
 
           {/* Explore */}
           <div>
-
             <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F7F3EE]">
               Explore
             </h3>
 
             <nav className="mt-5 flex flex-col gap-3">
-
               <a
                 href="#about"
                 className="text-sm text-[#AFA69D] transition hover:text-[#F7F3EE]"
@@ -101,20 +100,16 @@ export default function Footer() {
               >
                 FAQ
               </a>
-
             </nav>
-
           </div>
 
           {/* Connect */}
           <div>
-
             <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F7F3EE]">
               Connect
             </h3>
 
             <div className="mt-5 flex flex-col gap-4">
-
               <a
                 href="https://www.instagram.com/renuthreadarts/"
                 target="_blank"
@@ -142,49 +137,75 @@ export default function Footer() {
                 <FaWhatsapp size={19} />
                 WhatsApp
               </button>
-
             </div>
 
             <p className="mt-7 max-w-xs text-xs leading-6 text-[#817870]">
               Follow our work, student creations and upcoming classes on
               Instagram.
             </p>
-
           </div>
-
         </div>
-
       </div>
 
       {/* Bottom Bar */}
+
+      {/* Bottom Bar */}
       <div className="border-t border-[#403B37]">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-5 text-xs text-[#817870] md:px-12 lg:px-16">
+          <div className="flex flex-col items-center justify-between gap-4 lg:flex-row">
+            <p className="text-center lg:text-left">
+              © {currentYear} Renu Thread & Brush Arts. All rights reserved.
+            </p>
 
+            <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3">
+              <Link
+                to="/terms-and-conditions"
+                className="transition hover:text-[#D8D0C8]"
+              >
+                Terms & Conditions
+              </Link>
+
+              <Link
+                to="/refund-policy"
+                className="transition hover:text-[#D8D0C8]"
+              >
+                Refund Policy
+              </Link>
+
+              <Link
+                to="/privacy-policy"
+                className="transition hover:text-[#D8D0C8]"
+              >
+                Privacy Policy
+              </Link>
+
+              <Link to="/#faq" className="transition hover:text-[#D8D0C8]">
+                FAQ
+              </Link>
+
+              <Link to="/#contact" className="transition hover:text-[#D8D0C8]">
+                Contact
+              </Link>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="border-t border-[#403B37] ">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-5 text-xs text-[#817870] sm:flex-row sm:items-center sm:justify-between md:px-12 lg:px-16">
-
-          <p>
-            © {currentYear} Renu Thread & Brush Arts. All rights reserved.
-          </p>
+          <p>© {currentYear} Renu Thread & Brush Arts. All rights reserved.</p>
 
           <div className="flex gap-5">
-            <a
-              href="#faq"
-              className="transition hover:text-[#D8D0C8]"
-            >
+            <a href="#faq" className="transition hover:text-[#D8D0C8]">
               FAQ
             </a>
 
-            <a
-              href="#contact"
-              className="transition hover:text-[#D8D0C8]"
-            >
+            <a href="#contact" className="transition hover:text-[#D8D0C8]">
               Contact
             </a>
           </div>
-
         </div>
-
-      </div>
-
+      </div> */}
     </footer>
   );
 }
