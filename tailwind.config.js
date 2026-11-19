@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
+        sans: ["Manrope", "sans-serif"],
+        serif: ["Playfair Display", "serif"],
       },
     },
   },
