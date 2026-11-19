@@ -70,12 +70,12 @@ export default function CoursesSection() {
           breakpoints={{
             1024: { slidesPerView: 2 },
           }}
-          className="rounded-3xl"
+          
         >
           {courses.map((c, i) => (
             <SwiperSlide key={i}>
               {/* CARD */}
-              <div className="group relative h-80 lg:h-[420px] rounded-3xl overflow-hidden bg-black shadow-md">
+              <div className="group relative h-80 lg:h-[420px] overflow-hidden bg-black shadow-md">
                 {/* Image (only image zooms) */}
                 <img
                   src={c.img}
