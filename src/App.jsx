@@ -10,9 +10,9 @@ import MuralPainting from "./components/Carouselpage/MuralPainting";
 import TanjorePainting from "./components/Carouselpage/TanjorePainting";
 import AariEmbroidery from "./components/Carouselpage/AariEmbroidery";
 import ScrollToTop from "./components/ScrollToTop";
-import PrivacyPolicy from "../../web/src/components/Landingpage/legalPages/PrivacyPolicy";
-import RefundPolicy from "../../web/src/components/Landingpage/legalPages/RefundPolicy";
-import TermsAndConditions from "../../web/src/components/Landingpage/legalPages/TermsAndCondition";
+import PrivacyPolicy from "../src/components/Landingpage/legalPages/PrivacyPolicy";
+import RefundPolicy from "../src/components/Landingpage/legalPages/RefundPolicy";
+import TermsAndConditions from "../src/components/Landingpage/legalPages/TermsAndCondition";
 
 function App() {
   // useEffect(() => {
