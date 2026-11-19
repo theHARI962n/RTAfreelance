@@ -10,6 +10,9 @@ import MuralPainting from "./components/Carouselpage/MuralPainting";
 import TanjorePainting from "./components/Carouselpage/TanjorePainting";
 import AariEmbroidery from "./components/Carouselpage/AariEmbroidery";
 import ScrollToTop from "./components/ScrollToTop";
+import PrivacyPolicy from "../../web/src/components/Landingpage/legalPages/PrivacyPolicy";
+import RefundPolicy from "../../web/src/components/Landingpage/legalPages/RefundPolicy";
+import TermsAndConditions from "../../web/src/components/Landingpage/legalPages/TermsAndCondition";
 
 function App() {
   // useEffect(() => {
@@ -28,19 +31,42 @@ function App() {
 
   return (
     <Router>
-      
       <div>
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<PageWrapper><LandingPage /></PageWrapper>} />
+          <Route
+            path="/"
+            element={
+              <PageWrapper>
+                <LandingPage />
+              </PageWrapper>
+            }
+          />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/courses/fashion-designing" element={<FashionDesigning />} />
+          <Route
+            path="/courses/fashion-designing"
+            element={<FashionDesigning />}
+          />
           <Route path="/courses/mural-painting" element={<MuralPainting />} />
-          <Route path="/courses/tanjore-painting" element={<TanjorePainting />} />
+          <Route
+            path="/courses/tanjore-painting"
+            element={<TanjorePainting />}
+          />
           <Route path="/courses/aari-embroidery" element={<AariEmbroidery />} />
-          <Route path="*" element={<div className="min-h-screen flex items-center justify-center"><h2 className="text-2xl font-semibold">404 - Page Not Found</h2></div>} />
+          <Route
+            path="*"
+            element={
+              <div className="min-h-screen flex items-center justify-center">
+                <h2 className="text-2xl font-semibold">404 - Page Not Found</h2>
+              </div>
+            }
+          />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
         </Routes>
       </div>
     </Router>
