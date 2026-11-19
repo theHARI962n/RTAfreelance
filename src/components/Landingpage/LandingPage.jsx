@@ -11,9 +11,12 @@ import Footer from "./FooterSection.jsx";
 import FeaturedWorkshop from "./FeaturedWorkshop.jsx";
 import { motion } from "framer-motion";
 import { pageVariants } from "../../animations.js";
+// import AppointmentDock from "./AppointmentDock.jsx";
+import CustomOrderProcess from "./CustomOrderProcess";
 
 export default function LandingPage() {
   return (
+    <>
     <motion.div
       className="font-sans text-gray-800"
       variants={pageVariants}
@@ -22,6 +25,7 @@ export default function LandingPage() {
       exit="exit"
       transition={{ duration: 0.5, ease: "easeInOut" }}
     >
+      
       <HeroSection />
       <AboutSection />
       <FeaturesSection />
@@ -29,9 +33,13 @@ export default function LandingPage() {
       <CoursesSection />
       <TestimonialsSection />
       <StudentShowcase />
+      <CustomOrderProcess />
       <FAQSection />
       <ContactSection />
       <Footer />
     </motion.div>
+
+    {/* <AppointmentDock /> */}
+    </>
   );
 }
